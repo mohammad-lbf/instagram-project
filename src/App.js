@@ -1,10 +1,13 @@
-import React from 'react';
+import React , {useContext} from 'react';
+// context
+import ApiContextProvider , {apiContext} from './Context/ApiContextProvider';
 
 const App = () => {
+  const userData = useContext(apiContext)
   return (
-    <div>
-      
-    </div>
+    <ApiContextProvider>
+
+    </ApiContextProvider>
   );
 };
 
