@@ -1,0 +1,16 @@
+.my-story{
+    width: fit-content;
+    position: relative;
+}
+.my-story img{
+    border-radius: 50%;
+    width: 50px;
+}
+.my-story i{
+    position: absolute;
+    bottom: 31%;
+    right:8%;
+}
+.my-story p{
+font-size: 14px;
+}
