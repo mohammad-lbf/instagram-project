@@ -1,0 +1,28 @@
+.logo{
+    width: 120px;
+}
+.icon{
+    font-size: 25px;
+}
+.home-header-container{
+    border-bottom: 1px rgb(235, 235, 235) solid;
+    transition: all 0.3s;
+    z-index: 100;
+    background-color: #fff;
+}
+.home-header{
+    width: calc(100% - 16rem);
+    margin: auto;
+}
+.search-bar{
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+}
+.search-icon{
+    font-size: 15px;
+}
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,4 @@
+.home{
+    width: calc(100% - 1rem);
+    margin: auto;
+}

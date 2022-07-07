@@ -1,0 +1,14 @@
+.icon{
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+}
+.mobile-footer{
+    background-color: #fff;
+    border-top: 1px rgb(235, 235, 235) solid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s;
+}
