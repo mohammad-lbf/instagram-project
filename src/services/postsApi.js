@@ -2,9 +2,15 @@
 import{
     one , two , three , four , five , six , seven , eight , nine , ten
 } from './posts'
-
+import {
+    javadezzati , amir_aghaee , amirmohammadzand , 
+    behrangalavi , hamedkomaily ,hamidgoodarzi , mehrammodiri , mohammadmotamedi ,rezagolzar , 
+    sirmajid_salehi
+    } from './profileImages';
+    
 export const posts = [
     {id:1 ,
+    profileImage:hamidgoodarzi ,    
     image:one ,
     userName:"hamidgoodarzi" ,
     likes:"8007" ,
@@ -13,6 +19,7 @@ export const posts = [
     time:"18 june" ,
     },
     {id:2 ,
+    profileImage:hamedkomaily ,    
     image:two ,
     userName:"hamedkomaily" ,
     likes: "17559" ,
@@ -21,6 +28,7 @@ export const posts = [
     time:"3 days ago" ,
     },
     {id:3 ,
+    profileImage:amirmohammadzand ,    
     image:three ,
     userName:"amirmohammadzand" ,
     likes: "1997" ,
@@ -29,6 +37,7 @@ export const posts = [
     time:"6 june" ,
     },
     {id:4 ,
+    profileImage:sirmajid_salehi ,    
     image:four ,
     userName:"sirmajid_salehi" ,
     likes:"4597" ,
@@ -37,6 +46,7 @@ export const posts = [
     time:"3 hours ago" ,
     },
     {id:5 ,
+    profileImage:mohammadmotamedi ,    
     image:five ,
     userName:"mohammadmotamedi" ,
     likes:"7884" ,
@@ -45,6 +55,7 @@ export const posts = [
     time:"1 day ago" ,
     },
     {id:6 ,
+    profileImage:mehrammodiri ,    
     image:six ,
     userName:"mehranmodiri" ,
     likes:"45963" ,
@@ -53,6 +64,7 @@ export const posts = [
     time:"2 days ago" ,
     },
     {id:7 ,
+    profileImage:amir_aghaee ,    
     image:seven ,
     userName:"amir_aghaee" ,
     likes:"78546" ,
@@ -61,6 +73,7 @@ export const posts = [
     time:"3 days ago" ,
     },
     {id:8 ,
+    profileImage:behrangalavi ,    
     image:eight  ,
     userName:"behrangalavi_official" ,
     likes:"5478" ,
@@ -69,6 +82,7 @@ export const posts = [
     time:"5 hours ago" ,
     },
     {id:9 ,
+    profileImage:javadezzati ,    
     image:nine ,
     userName:"javadezzati" ,
     likes:"22365" ,
@@ -77,6 +91,7 @@ export const posts = [
     time:"12 hours ago" ,
     },
     {id:10 ,
+    profileImage:rezagolzar ,    
     image:ten ,
     userName:"rezagolzar" ,
     likes:"22365" ,

@@ -1,9 +1,9 @@
 import React , {createContext} from 'react';
 import {posts} from '../services/postsApi';
 
-const PostsContextsProvider = (props) => {
-    const postsContext = createContext();
+export const postsContext = createContext();
 
+const PostsContextsProvider = (props) => {
     return (
         <postsContext.Provider value={posts}>
             {props.children}
