@@ -5,17 +5,20 @@ import HomeHeader from './components/HomeHeader';
 import MobileFooter from './components/MobileFooter';
 // context
 import ApiContextProvider , {apiContext} from './Context/ApiContextProvider';
+import PostsContextsProvider from './Context/PostsContextsProvider';
 
 const App = () => {
   const userData = useContext(apiContext)
   return (
     <ApiContextProvider>
-        <HomeHeader />
+      <PostsContextsProvider>
+      <HomeHeader />
         <Routes>
-        <Route path="/*" element={<Navigate to="/home" />} />
+          <Route path="/*" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
         </Routes>
         <MobileFooter />
+      </PostsContextsProvider>
     </ApiContextProvider>
   );
 };
