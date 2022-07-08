@@ -1,6 +1,16 @@
+.story-slider{
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
 .my-story{
-    width: fit-content;
+    /* width: fit-content; */
     position: relative;
+    cursor: pointer;
+
 }
 .my-story img{
     border-radius: 50%;
@@ -8,9 +18,32 @@
 }
 .my-story i{
     position: absolute;
-    bottom: 31%;
-    right:8%;
+    bottom: 27%;
+    left:20%;
 }
 .my-story p{
-font-size: 14px;
+font-size: 10px;
+text-align: center;
+}
+@media (min-width:576px){
+    .my-story p{
+        font-size: 15px;
+        } 
+        .my-story i{
+            position: absolute;
+            bottom: 27%;
+            left:27%;
+        }
+        
+}
+@media (min-width:576px){
+    .story-slider{  
+        margin-top: 50px;
+    }    
+}
+@media (min-width:992px){
+    .story-slider{
+        width: 100%;
+        margin-top: 50px; 
+    }  
 }

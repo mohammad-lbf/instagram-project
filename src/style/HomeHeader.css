@@ -9,9 +9,10 @@
     transition: all 0.3s;
     z-index: 100;
     background-color: #fff;
+    position: fixed;
 }
 .home-header{
-    width: calc(100% - 16rem);
+    width: calc(100% - 6rem);
     margin: auto;
 }
 .search-bar{
@@ -25,4 +26,9 @@
     background-color: transparent;
     border: none;
     outline: none;
+}
+@media (min-width:1200px){
+    .home-header{
+        width: calc(100% - 28rem);
+    }
 }
