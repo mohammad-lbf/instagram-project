@@ -1,5 +1,6 @@
 import React , {useContext} from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import Direct from './components/Direct';
 import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
 import MobileFooter from './components/MobileFooter';
@@ -10,16 +11,15 @@ import PostsContextsProvider from './Context/PostsContextsProvider';
 const App = () => {
   const userData = useContext(apiContext)
   return (
-    <ApiContextProvider>
-      <PostsContextsProvider>
-      <HomeHeader />
+  <ApiContextProvider>
+    <PostsContextsProvider>
         <Routes>
-          <Route path="/*" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
+            <Route path="/*"      element={<Navigate to="/home" />} />
+            <Route path="/home"   element={<><HomeHeader /><Home /><MobileFooter /></>}                />
+            <Route path="/direct" element={<Direct />} />
         </Routes>
-        <MobileFooter />
-      </PostsContextsProvider>
-    </ApiContextProvider>
+    </PostsContextsProvider>
+  </ApiContextProvider>
   );
 };
 

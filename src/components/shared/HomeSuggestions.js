@@ -40,7 +40,7 @@ const HomeSuggestions = () => {
                      <a className="text-decoration-none mx-1" href="">Language</a>
                 </div>
             </div>
-            <p className="gray-text">&copy; 2022 INSTAGRAM FROM META</p>
+            <p className="gray-text ms-3">&copy; 2022 INSTAGRAM FROM META</p>
         </div>
     );
 };

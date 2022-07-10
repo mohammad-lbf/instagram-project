@@ -1,0 +1,26 @@
+
+.profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.blue-tick{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.post{
+    background-color: #fff;
+}
+.my-image{
+    width: 40px;
+    height: 40px;
+}
+.post-time{
+    font-size: 10px;
+    color: gray;
+}
+i{
+    cursor: pointer;
+}

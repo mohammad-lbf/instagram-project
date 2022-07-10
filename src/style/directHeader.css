@@ -1,0 +1,11 @@
+.e-icon{
+    font-size: 25px;
+}
+.direct-header{
+    border-bottom: 1px solid rgb(218, 218, 218);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 120;
+}

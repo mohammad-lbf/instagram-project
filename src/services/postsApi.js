@@ -17,6 +17,8 @@ export const posts = [
     comments:"297" ,
     describtion:"تابستان" ,
     time:"18 june" ,
+    like:false,
+    save:false
     },
     {id:2 ,
     profileImage:hamedkomaily ,    
@@ -26,6 +28,8 @@ export const posts = [
     comments:"125" ,
     describtion:"1401.4.14" ,
     time:"3 days ago" ,
+    like:false,
+    save:false
     },
     {id:3 ,
     profileImage:amirmohammadzand ,    
@@ -35,6 +39,8 @@ export const posts = [
     comments:"254" ,
     describtion:"تنها شهامت عبور از راه است که راه را پدیدار می‌سازد" ,
     time:"6 june" ,
+    like:false,
+    save:false
     },
     {id:4 ,
     profileImage:sirmajid_salehi ,    
@@ -44,6 +50,8 @@ export const posts = [
     comments:"457" ,
     describtion:"#majid-salehi" ,
     time:"3 hours ago" ,
+    like:false,
+    save:false
     },
     {id:5 ,
     profileImage:mohammadmotamedi ,    
@@ -53,6 +61,8 @@ export const posts = [
     comments:"236" ,
     describtion:"#mohammad-motamedi" ,
     time:"1 day ago" ,
+    like:false,
+    save:false
     },
     {id:6 ,
     profileImage:mehrammodiri ,    
@@ -62,6 +72,8 @@ export const posts = [
     comments:"1246" ,
     describtion:"" ,
     time:"2 days ago" ,
+    like:false,
+    save:false
     },
     {id:7 ,
     profileImage:amir_aghaee ,    
@@ -71,6 +83,8 @@ export const posts = [
     comments:"2391" ,
     describtion:"" ,
     time:"3 days ago" ,
+    like:false,
+    save:false
     },
     {id:8 ,
     profileImage:behrangalavi ,    
@@ -80,6 +94,8 @@ export const posts = [
     comments:"703" ,
     describtion:"#بهرنگ" ,
     time:"5 hours ago" ,
+    like:false,
+    save:false
     },
     {id:9 ,
     profileImage:javadezzati ,    
@@ -89,6 +105,8 @@ export const posts = [
     comments:"1036" ,
     describtion:"#javad-ezzati" ,
     time:"12 hours ago" ,
+    like:false,
+    save:false
     },
     {id:10 ,
     profileImage:rezagolzar ,    
@@ -98,5 +116,7 @@ export const posts = [
     comments:"4581" ,
     describtion:"#reza-golzar" ,
     time:"30 minutes ago" ,
+    like:false,
+    save:false
     }
 ]

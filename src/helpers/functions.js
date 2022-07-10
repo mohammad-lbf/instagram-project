@@ -4,3 +4,7 @@ export const userNameShortener = (userName)=>{
     `;
     return shorterUserName;
 }
+export const isLiked = (state , id) => {
+    const currentItem = state.find(item => item.id === id);
+    return !!currentItem.like;
+}
