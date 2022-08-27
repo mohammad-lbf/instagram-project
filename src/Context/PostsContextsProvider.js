@@ -8,12 +8,10 @@ const postsReducer = (state , action) =>{
         case "LIKE":
         const currentLikePostIndex = state.findIndex(item => item.id === action.payload.data.id);
         state[currentLikePostIndex].like = !(state[currentLikePostIndex].like);
-        console.log(state[currentLikePostIndex])
         return state;
         case "SAVE":
             const currentSavePostIndex = state.findIndex(item => item.id === action.payload.data.id);
             state[currentSavePostIndex].save = !(state[currentSavePostIndex].save);
-            console.log(state[currentSavePostIndex])
             return state;   
        
     }
