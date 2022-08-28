@@ -2,7 +2,7 @@ import React from 'react';
 
 const Activity = () => {
     return (
-        <div>
+        <div style={{paddingTop:"55px"}}>
             activity
         </div>
     );

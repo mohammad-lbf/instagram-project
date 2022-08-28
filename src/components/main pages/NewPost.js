@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewPost = () => {
     return (
-        <div>
+        <div style={{paddingTop:"55px"}}>
             new post
         </div>
     );
