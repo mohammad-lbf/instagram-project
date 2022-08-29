@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExploreHeader = () => {
     return (
-        <div>
+        <div className="text-center d-lg-none">
             <div 
             style={{width:"300px" , backgroundColor:"rgb(239, 239, 239)" ,}}
             className="d-flex mx-auto px-2 py-1 rounded ">

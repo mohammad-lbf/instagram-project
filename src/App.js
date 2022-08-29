@@ -1,6 +1,7 @@
 import React , {useContext} from 'react';
 import { Navigate, Route, Routes , useLocation } from 'react-router-dom';
 import Direct from './components/Direct';
+import ExplorePost from './components/ExplorePost';
 import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
 import Activity from './components/main pages/Activity';
@@ -15,7 +16,6 @@ import PostsContextsProvider from './Context/PostsContextsProvider';
 const App = () => {
   const userData = useContext(apiContext);
   const {pathname} = useLocation();
-  console.log(pathname)
   return (
   <ApiContextProvider>
     <PostsContextsProvider>
@@ -28,6 +28,7 @@ const App = () => {
             <Route path="/newpost" element={<NewPost />} />
             <Route path="/activity" element={<Activity />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/explore/:id" element={<ExplorePost />} />
         </Routes>
         <MobileFooter path={pathname} />
     </PostsContextsProvider>
