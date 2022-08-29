@@ -34,15 +34,25 @@ const Explore = () => {
     
     `
     const {loading , data , error} = useQuery(GET_EXPLORE_POSTS);
-    if(data){
-        console.log(data.explorePosts)
-    }
     return (
         <Div className="m-0 w-100">
             <ExploreHeader />
             <div className="mt-2">
                 <div className="container bg-white border rounded py-2">
-                    
+                       {
+                          loading &&
+                                <div className="text-center">
+                                    <div className="spinner-border text-dark text-center" role="status">
+                                    <span className="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                         }
+                         {
+                             error &&
+                             <div className="text-center mt-2">
+                                 <p>could not refresh feed</p>
+                             </div>
+                         }
                         {
                             data &&
                             <div className="row justify-content-center">
