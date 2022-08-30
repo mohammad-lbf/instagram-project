@@ -1,7 +1,8 @@
 import React , {useContext} from 'react';
 import Post from './shared/Post';
 import { postsContext } from '../Context/PostsContextsProvider';
-import '../style/newPosts.css'
+import '../style/newPosts.css';
+
 const NewPosts = () => {
     const newPosts = useContext(postsContext);
     return (

@@ -1,11 +1,14 @@
 import React , {useState , useEffect} from 'react';
 import { Link , useParams } from 'react-router-dom';
+import styled from 'styled-components';
 import { useQuery } from '@apollo/client';
 import { GET_EXPLORE_POSTS } from '../GraphQL/queries';
-import blueTick from '../assets/360_F_350402828_y4tZGyZkQm01KIqx6y5RSsZ2gdmORL9F-removebg-preview.png';
-import myImage from '../assets/7545.png';
+
 import '../style/post.css';
-import styled from 'styled-components';
+
+import blueTick from '../assets/360_F_350402828_y4tZGyZkQm01KIqx6y5RSsZ2gdmORL9F-removebg-preview.png';
+import myImage from '../assets/7545.jpg';
+
 const ExplorePost = () => {
     const {loading , data , error} = useQuery(GET_EXPLORE_POSTS);
     const {id} = useParams();
@@ -23,7 +26,6 @@ const ExplorePost = () => {
         setCurrentPost(data.explorePosts.find(post => post.id == id))
         : setCurrentPost({})
     } , [data]);
-    console.log(loading)
     const Div = styled.div`
     padding-bottom:50px;
     @media (min-width:992px){
@@ -58,7 +60,7 @@ const ExplorePost = () => {
                     <div className="d-flex align-items-center flex-row-reverse">
                     <img className="profile-image" src={currentPost.author.profileImage.url} alt="profile-image" />
                     <img className="blue-tick" src={blueTick} alt="blueTick" />
-                    <p className="mb-0">{currentPost.author.userName}</p>
+                    <p className="mb-0 fs-15">{currentPost.author.userName}</p>
                     </div>
                     <div>
                     <i className="bi bi-three-dots-vertical"></i>
@@ -92,7 +94,7 @@ const ExplorePost = () => {
                 <p className="text-secondary  ps-2 fs-15 mb-1">see all {currentPost.comments} comments</p>
             </div>
             <div className="d-flex align-items-center ps-2 fs-15">
-                <img className="my-image" src={myImage} alt="user-profile-image" />
+                <img className="my-image rounded-circle" src={myImage} alt="user-profile-image" />
                 <p className="mb-0 text-secondary ps-1 fs-13">add comment...</p>
             </div>
             <p className="post-time mt-2 ps-3">{currentPost.time}</p>

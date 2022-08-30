@@ -1,9 +1,11 @@
 import React from 'react';
-import ExploreHeader from '../shared/ExploreHeader';
-import styled from  'styled-components'
 import { useQuery } from '@apollo/client';
-import { GET_EXPLORE_POSTS } from '../../GraphQL/queries';
 import { Link } from 'react-router-dom';
+
+import styled from  'styled-components'
+
+import { GET_EXPLORE_POSTS } from '../../GraphQL/queries';
+import ExploreHeader from '../shared/ExploreHeader';
 
 const Explore = () => {
     const Div = styled.div`
@@ -57,9 +59,9 @@ const Explore = () => {
                             data &&
                             <div className="row justify-content-center">
                                 {
-                                    data.explorePosts.map(post => <div className="col-4 p-0 m-1" style={{width:"fit-content"}}>
+                                    data.explorePosts.map(post => <div key={post.id} className="col-4 p-0 m-1" style={{width:"fit-content"}}>
                                         <Link to={`/explore/${post.id}`}>
-                                        <img id="post-cover"  src={post.postImage.url} />
+                                        <img id="post-cover" alt="post-cover"  src={post.postImage.url} />
                                         </Link>
                                     </div>)
                                 }

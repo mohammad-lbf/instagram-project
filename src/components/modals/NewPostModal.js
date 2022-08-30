@@ -3,7 +3,7 @@ import React from 'react';
 const NewPostModal = () => {
     return (
         <div>
-          <div className="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal fade" id="newPostModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
              <div className="modal-dialog modal-dialog-centered">
                <div className="modal-content" >
                  <div className="modal-header">

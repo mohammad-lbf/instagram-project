@@ -6,12 +6,17 @@ import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
 import Activity from './components/main pages/Activity';
 import Explore from './components/main pages/Explore';
-import NewPostModal from './components/main pages/NewPostModal';
 import Profile from './components/main pages/Profile';
 import MobileFooter from './components/MobileFooter';
 // context
 import ApiContextProvider , {apiContext} from './Context/ApiContextProvider';
 import PostsContextsProvider from './Context/PostsContextsProvider';
+// Modals
+import NewPostModal from './components/modals/NewPostModal';
+import ProfileMenuModal from './components/modals/ProfileMenuModal';
+import ChangeAccountModal from './components/modals/ChangeAccountModal';
+import ProfileNewCreate from './components/modals/ProfileNewCreateModal';
+
 
 const App = () => {
   const userData = useContext(apiContext);
@@ -31,6 +36,9 @@ const App = () => {
         </Routes>
         <MobileFooter path={pathname} />
         <NewPostModal />
+        <ProfileMenuModal />
+        <ProfileNewCreate />
+        <ChangeAccountModal />
     </PostsContextsProvider>
   </ApiContextProvider>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/direct.css'
 import DirectHeader from './shared/DirectHeader';
-import HomeHeader from './HomeHeader';
+
 const Direct = () => {
     return (
         <div className="direct">
@@ -19,7 +19,7 @@ const Direct = () => {
                     <p className="mb-0 fs-15">messages</p>
                 </div>
                 <div className="text-center mt-5">
-                      <i class="bi bi-send fs-1 rounded-circle"></i>
+                      <i className="bi bi-send fs-1 rounded-circle"></i>
                     <p className="text-center fs-5 mt-4">Message friends with Direct </p>
                     <p className="text-secondary fs-13 text-center">Send private messages or share your favorite posts directly with friends</p>
                     <p className="fs-15 text-primary text-center">Send a message</p>

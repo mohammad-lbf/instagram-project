@@ -1,12 +1,12 @@
 import React from 'react';
-import profileImage from '../../assets/7545.png';
+import profileImage from '../../assets/7545.jpg';
 import '../../style/HomeSuggestions.css'
 const HomeSuggestions = () => {
     return (
         <div className="d-none d-xl-flex flex-column align-items-center">
             <div className="d-xl-flex justify-content-between align-items-center d-none home-suggestions">
                 <div className="d-flex">
-                    <img src={profileImage} />
+                    <img alt="profile" className="rounded-circle" src={profileImage} />
                     <div className="d-flex flex-column align-items-start justify-content-center">
                         <span>mohammad_lbf</span>
                         <span>MOHAMMAD</span>

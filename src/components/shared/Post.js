@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
 import blueTick from '../../assets/360_F_350402828_y4tZGyZkQm01KIqx6y5RSsZ2gdmORL9F-removebg-preview.png'
-import myImage from '../../assets/7545.png';
+import myImage from '../../assets/7545.jpg';
 import '../../style/post.css';
 const Post = ({state , data , dispatch}) => {
 
@@ -24,7 +24,7 @@ const Post = ({state , data , dispatch}) => {
                <div className="d-flex align-items-center flex-row-reverse">
                <img className="profile-image" src={profileImage} alt="profile-image" />
                <img className="blue-tick" src={blueTick} alt="blueTick" />
-               <p className="mb-0">{userName}</p>
+               <p className="mb-0 fs-15">{userName}</p>
                </div>
                <div>
                <i className="bi bi-three-dots-vertical"></i>
@@ -65,7 +65,7 @@ const Post = ({state , data , dispatch}) => {
                 <p className="text-secondary  ps-2 fs-15 mb-1">see all {comments} comments</p>
             </div>
             <div className="d-flex align-items-center ps-2 fs-15">
-                <img className="my-image" src={myImage} alt="user-profile-image" />
+                <img className="my-image rounded-circle" src={myImage} alt="user-profile-image" />
                 <p className="mb-0 text-secondary ps-1 fs-13">add comment...</p>
             </div>
             <p className="post-time mt-2 ps-3">{time}</p>

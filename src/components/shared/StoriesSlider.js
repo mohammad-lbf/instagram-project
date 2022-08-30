@@ -1,6 +1,6 @@
 import React , {useContext} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import profileImage from '../../assets/7545.png';
+import profileImage from '../../assets/7545.jpg';
 import '@splidejs/react-splide/css';
 import '../../style/slider.css';
 import { apiContext } from '../../Context/ApiContextProvider';
@@ -17,7 +17,7 @@ const StoriesSlider = () => {
             gap: '0rem',
             pagination: false,
             padding:0,
-            direction: 'rtl',
+            direction: 'ltr',
             arrows:true,
             breakpoints:{
               576:{perPage:4 , arrows:false},
@@ -31,7 +31,7 @@ const StoriesSlider = () => {
         <SplideSlide>
           <div className="my-story d-flex flex-column align-items-center">
             <img src={profileImage} alt="Image 1"/>
-            <i className="bi bi-plus-circle-fill text-primary"></i>
+            <i className="bi bi-plus bg-primary text-white rounded-circle"></i>
             <p className="mb-0">your story</p>
           </div>
         </SplideSlide>
