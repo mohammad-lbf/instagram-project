@@ -1,4 +1,4 @@
-import React , {useContext} from 'react';
+import React from 'react';
 import { Navigate, Route, Routes , useLocation } from 'react-router-dom';
 import Direct from './components/Direct';
 import ExplorePost from './components/ExplorePost';
@@ -9,7 +9,7 @@ import Explore from './components/main pages/Explore';
 import Profile from './components/main pages/Profile';
 import MobileFooter from './components/MobileFooter';
 // context
-import ApiContextProvider , {apiContext} from './Context/ApiContextProvider';
+import ApiContextProvider from './Context/ApiContextProvider';
 import PostsContextsProvider from './Context/PostsContextsProvider';
 // Modals
 import NewPostModal from './components/modals/NewPostModal';
@@ -19,14 +19,15 @@ import ProfileNewCreate from './components/modals/ProfileNewCreateModal';
 
 
 const App = () => {
-  const userData = useContext(apiContext);
+
   const {pathname} = useLocation();
   return (
   <ApiContextProvider>
     <PostsContextsProvider>
     <HomeHeader path={pathname} />
         <Routes>
-            <Route path="/*"      element={<Navigate to="/home" />} />
+            <Route path="/*"      element={<Navigate to="/" />} />
+            <Route path="/"       element={<Home />} />
             <Route path="/home"   element={<><Home /></>}                />
             <Route path="/direct" element={<Direct />} />
             <Route path="/explore" element={<Explore />} />
