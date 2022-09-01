@@ -3,7 +3,7 @@ import {gql} from '@apollo/client'
 export const GET_EXPLORE_POSTS = gql`
 
 query{
-  explorePosts {
+  explorePosts(last: 40) {
     id
     likes
     postImage {

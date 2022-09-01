@@ -26,8 +26,7 @@ const App = () => {
     <PostsContextsProvider>
     <HomeHeader path={pathname} />
         <Routes>
-            <Route path="/*"      element={<Navigate to="/" />} />
-            <Route path="/"       element={<Home />} />
+            <Route path="/*"      element={<Navigate to="/home" />} />
             <Route path="/home"   element={<><Home /></>}                />
             <Route path="/direct" element={<Direct />} />
             <Route path="/explore" element={<Explore />} />
